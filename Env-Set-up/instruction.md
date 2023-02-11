@@ -17,4 +17,13 @@ Why we need it?
 
 Java Runtime Environment (JRE) is a eice of software that is designed to run other software. As the runtime environment for Java, The JRE contains the Java class libraries, the Java class loader, and the Java Virtual Machine.
 
-You can download it **[Here](https://www.oracle.com/java/technologies/downloads/#jdk18-windows)
+You can download it **[Here](https://www.oracle.com/java/technologies/downloads/#jdk18-windows)**
+
+
+***Apache Kafka 3.1.0:***
+
+Why we need it?
+
+Apache Kafka is an oen-source distributed event streaming platform used by thousands of companies for high-perferamnce data pipelines, streaming analytics, data intergration, and mission-crtical applications
+
+You can download it **[Here](https://www.apache.org/dyn/closer.cgi?path=/kafka/3.1.0/kafka_2.13-3.1.0.tgz)**
