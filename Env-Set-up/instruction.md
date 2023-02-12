@@ -36,3 +36,12 @@ Why we need it?
 Apache Spark is basically a comutational engine that works with huge sets of data by processing them in parallel and batch systems. Spark us written in Scala, and Pyspark was released to support the collaboration os Spark and Python.
 
 You can download it **[Here](https://www.apache.org/dyn/closer.lua/spark/spark-3.2.1/spark-3.2.1-bin-hadoop3.2.tgz)**
+
+
+***APache Zookeeper 3.7.0***
+
+Why we need it?
+
+Zookeeper is a high-performance coordination service for distributed applications. It exposes common services, such as naming, configuration management, synchronization, and group services, in a simple interface so you don't have to write them from scratch. You can usit off-the-shelf to implement consensus, group management, leader election, and presence protocols. And you can build on it for your own, specific needs.
+
+You can download it **[Here](https://www.apache.org/dyn/closer.lua/zookeeper/zookeeper-3.7.0/apache-zookeeper-3.7.0-bin.tar.gz)**
