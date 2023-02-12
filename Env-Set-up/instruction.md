@@ -27,3 +27,12 @@ Why we need it?
 Apache Kafka is an oen-source distributed event streaming platform used by thousands of companies for high-perferamnce data pipelines, streaming analytics, data intergration, and mission-crtical applications
 
 You can download it **[Here](https://www.apache.org/dyn/closer.cgi?path=/kafka/3.1.0/kafka_2.13-3.1.0.tgz)**
+
+
+***Spark 3.2.1 with Hadoop 3.2.1***
+
+Why we need it?
+
+Apache Spark is basically a comutational engine that works with huge sets of data by processing them in parallel and batch systems. Spark us written in Scala, and Pyspark was released to support the collaboration os Spark and Python.
+
+You can download it **[Here](https://www.apache.org/dyn/closer.lua/spark/spark-3.2.1/spark-3.2.1-bin-hadoop3.2.tgz)**
