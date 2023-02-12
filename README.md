@@ -6,4 +6,4 @@ Twitter is a widely used social media platform, and it generates a large amount 
 
 ## Architecture
 
-![The Architecture of the project](https://alakhawayn365-my.sharepoint.com/personal/s_lamchoudi_aui_ma/_layouts/15/onedrive.aspx?login_hint=S%2ELamchoudi%40aui%2Ema&id=%2Fpersonal%2Fs%5Flamchoudi%5Faui%5Fma%2FDocuments%2FLaptop%2FAUI%2FClasses%2FSpring23%2FSpecial%20Project%2FProject%2FarchitectureV2%2Epng&parent=%2Fpersonal%2Fs%5Flamchoudi%5Faui%5Fma%2FDocuments%2FLaptop%2FAUI%2FClasses%2FSpring23%2FSpecial%20Project%2FProject)
+![The Architecture of the project](https://alakhawayn365-my.sharepoint.com/:i:/g/personal/s_lamchoudi_aui_ma/ESZVDq6VdCREvrvehPd1lHEBVKPfjKxhiO-kPc_Pg1GxWg?e=mXcByr)
