@@ -21,3 +21,5 @@ To run the zookeeper we need to run **zkserver** command on the terminal. Note t
 
 To run kafka server, we need to open the folder containing the kafka files and run the following command **.\bin\windows\kafka-server-start.bat .\config\server.properties**, and then the terminal should show a list of text from **Kafka processes**.
 ![The kafka server](./images/kafka.png)
+
+The next step is to create a topic for **Kafka streaming**. We can do this by opening a new terminal and heading to the folder containing Kfaka folders and runnin gthe following command **.\bin\windows\kafka-topics.bat — create — bootstrap-server localhost:9092 — replication-factor 1 — partitions 1 — topic TW_ANALYSIS**, where TW_ANAKYSIS is the name of the topic we are going to use. Note that by default kafka runs in port 9092, which we can change in the **server.properties** files, and also modilfy the Zookeeper default connection port with kafka.
