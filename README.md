@@ -6,4 +6,4 @@ Twitter is a widely used social media platform, and it generates a large amount 
 
 ## Architecture
 
-![The Architecture of the project](C:\Users\S.Lamchoudi\Desktop\Special_Topic\project\images\architectureV2.png)
+![The Architecture of the project](./images/architectureV2.png)
