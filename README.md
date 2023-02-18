@@ -11,3 +11,7 @@ Twitter is a widely used social media platform, and it generates a large amount 
 
 ## How to start
 To start with the streaming, we must firt run our servers **Zookeeper**, **Kafka**, and **Spark**. We need to open three new terminals and in each, we start different process.
+
+***Terminal 1: Zookeeper***
+To run the zookeeper we need to run **zkserver** command on the terminal. Note that by default zookeeper will run port 2181, which is something we can change it on the **zoo.cfg file**
+![The zookeeper Server](./images/zkserver.png)
