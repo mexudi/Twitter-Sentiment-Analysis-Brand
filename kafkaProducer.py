@@ -37,10 +37,11 @@ class TweetListener(tweepy.Stream):
         if status_code == 420:
             # returning False in on_data disconnects the stream
             return False
-    def start_streaming_tweets(self, search term):
-        self.fillter(track=search_term, stall_warning=True, language['en']
+
+
+    def start_streaming_tweets(self, search_term):
+        self.filter(track=search_term, language['en'])
 
 if __name__ == '__main__':
     twitter_stream = TweetListner(consumerKey, consumerSecret, accessToken, accessTokenSecret)
     twitter_stream.start_streaming_tweets(search_term)
-
