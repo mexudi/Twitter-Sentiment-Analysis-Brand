@@ -5,11 +5,11 @@ import tweepy
 import logging
 
 
-from kafka import kafkaProducer
+from kafka import KafkaProducer
 
 #Generate kafka producer / localhost and 9092 default ports
 
-producer = kafkaProducer(bootstrap_server=['localhost:9092'])
+producer = KafkaProducer(bootstrap_server=['localhost:9092'])
 
 search_term = 'elon musk'
 topic_name = 'TW_ANALYSIS'
