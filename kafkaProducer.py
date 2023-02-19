@@ -2,27 +2,25 @@
 
 import auth_tokens as auth
 import tweepy
-import logging
+import loggin
 
 
-from kafka import KafkaProducer
+from kafka import kafkaProducer
 
 #Generate kafka producer / localhost and 9092 default ports
 
-producer = KafkaProducer(bootstrap_server=['localhost:9092'])
+producer = KafkaProducer(bootstrap_servers='localhost:9092')
+search_term = 'Bitcoin'
+topic_name = 'twitter'
 
-search_term = 'elon musk'
-topic_name = 'TW_ANALYSIS'
 
-def twitter_auth():
-    # Create Twitter API authentication object
-    authenticate = tweepy.OAuthhandler(consumerKey, consumerSecret)
-
-    # Add access information -access token and access token secret-
+def twitterAuth():
+    # create the authentication object
+    authenticate = tweepy.OAuthHandler(consumerKey, consumerSecret)
+    # set the access token and the access token secret
     authenticate.set_access_token(accessToken, accessTokenSecret)
-
-    # Create API object
-    api = tweepy.API(authenticate, wait_onrate_limit=True)
+    # create the API object
+    api = tweepy.API(authenticate, wait_on_rate_limit=True)
     return api
 
 
@@ -41,7 +39,8 @@ class TweetListener(tweepy.Stream):
     def start_streaming_tweets(self, search_term):
         self.filter(track=search_term, stall_warnings=True, languages=["en"])
 
-if __name__ == '__main__':
-    twitter_stream = TweetListner(consumerKey, consumerSecret, accessToken, accessTokenSecret)
-    twitter_stream.start_streaming_tweets(search_term)
 
+# Press the green button in the gutter to run the script.
+if __name__ == '__main__':
+    twitter_stream = TweetListener(consumerKey, consumerSecret, accessToken, accessTokenSecret)
+    twitter_stream.start_streaming_tweets(search_term)
