@@ -16,9 +16,9 @@ topic_name = 'TW_ANALYSIS'
 
 def twitterAuth():
     # create the authentication object
-    authenticate = tweepy.OAuthHandler(consumerKey, consumerSecret)
+    authenticate = tweepy.OAuthHandler(auth.consumerKey, auth.consumerSecret)
     # set the access token and the access token secret
-    authenticate.set_access_token(accessToken, accessTokenSecret)
+    authenticate.set_access_token(auth.accessToken, auth.accessTokenSecret)
     # create the API object
     api = tweepy.API(authenticate, wait_on_rate_limit=True)
     return api
