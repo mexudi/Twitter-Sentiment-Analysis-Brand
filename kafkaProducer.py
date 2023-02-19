@@ -16,9 +16,9 @@ topic_name = 'TW_ANALYSIS'
 
 def twitterAuth():
     # create the authentication object
-    authenticate = tweepy.OAuthHandler(auth.consumerKey, auth.consumerSecret)
+    authenticate = tweepy.OAuthHandler(auth.consumer_keys, auth.consumer_secret)
     # set the access token and the access token secret
-    authenticate.set_access_token(auth.accessToken, auth.accessTokenSecret)
+    authenticate.set_access_token(auth.access_token, auth.access_secret)
     # create the API object
     api = tweepy.API(authenticate, wait_on_rate_limit=True)
     return api
@@ -42,5 +42,5 @@ class TweetListener(tweepy.Stream):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    twitter_stream = TweetListener(consumerKey, consumerSecret, accessToken, accessTokenSecret)
+    twitter_stream = TweetListener(auth.consumer_keys, auth.consumer_secret, auth.access_token, auth.access_secret)
     twitter_stream.start_streaming_tweets(search_term)
