@@ -2,16 +2,16 @@
 
 import auth_tokens as auth
 import tweepy
-import loggin
+import logging
 
 
-from kafka import kafkaProducer
+from kafka import KafkaProducer
 
 #Generate kafka producer / localhost and 9092 default ports
 
 producer = KafkaProducer(bootstrap_servers='localhost:9092')
-search_term = 'Bitcoin'
-topic_name = 'twitter'
+search_term = 'elon musk'
+topic_name = 'TW_ANALYSIS'
 
 
 def twitterAuth():
