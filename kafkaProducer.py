@@ -2,7 +2,7 @@
 
 import auth_tokens as auth
 import tweepy
-import loggin
+import logging
 
 
 from kafka import kafkaProducer
