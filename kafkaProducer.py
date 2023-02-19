@@ -28,7 +28,7 @@ def twitter_auth():
 
 class TweetListener(tweepy.Stream):
 
-    def on_date(self, raw_data):
+    def on_data(self, raw_data):
         logging.info(raw_data)
         producer.send(topic_name, value=raw_data)
         return True
@@ -37,8 +37,9 @@ class TweetListener(tweepy.Stream):
         if status_code == 420:
             # returning False in on_data disconnects the stream
             return False
-    def start_streaming_tweets(self, search term):
-        self.fillter(track=search_term, stall_warning=True, language['en']
+
+    def start_streaming_tweets(self, search_term):
+        self.filter(track=search_term, stall_warnings=True, languages=["en"])
 
 if __name__ == '__main__':
     twitter_stream = TweetListner(consumerKey, consumerSecret, accessToken, accessTokenSecret)
