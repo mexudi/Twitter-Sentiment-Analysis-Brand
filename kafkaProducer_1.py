@@ -11,3 +11,7 @@ search_terms = 'python'
 for tweet in sntwitter.TwitterSearchScraper(search_terms).get_items():
     producer.send('twitter', tweet.content.encode('utf-8'))
 
+
+# Close the producer
+producer.close()
+
