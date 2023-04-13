@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sentiment Analysis Dashboard</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/4.2.0/socket.io.min.js"></script>
+    <script type="text/javascript">
+        var socket = io.connect('http://' + document.domain + ':' + location.port);
+        socket.on('connect', function () {
+            console.log('Connected to server');
+        });
+        socket.on('update_dashboard', function (data) {
+            document.getElementById('positive-percent').innerHTML = data.positive + '%';
+            document.getElementById('negative-percent').innerHTML = data.negative + '%';
+        }
+        )
